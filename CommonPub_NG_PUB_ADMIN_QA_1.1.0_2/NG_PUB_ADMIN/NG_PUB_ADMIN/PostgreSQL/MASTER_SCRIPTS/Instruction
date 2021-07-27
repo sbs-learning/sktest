@@ -1,0 +1,13 @@
+Below mentioned functions and Procedures do not have schemaname. appended with them in create or replace 
+because we want to keep them generalize as the same  script will deploy on data owner schema also
+Also in _fq_ procedure internally we have not used schemaname. in call of p_util because it is calling p_util procedure in the procedure
+p_util_refresh_mv
+p_util_gather_table_stats
+p_util_gather_table_n_partition_stats
+p_util_gather_fq_table_stats
+p_util_gather_fq_table_stats
+p_util_drop_partition
+p_util_get_partition_name
+p_util_get_partition_value
+p_util_validate_partition
+p_util_add_range_partition
